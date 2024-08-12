@@ -1,0 +1,33 @@
+package tablas.de.multiplicarr;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author MALLI
+ */
+public class TablasDeMultiplicarr {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+         Scanner scanner = new Scanner(System.in);
+
+      
+        System.out.print("Ingrese el numero multiplicador: ");
+        int multiplicador = scanner.nextInt();
+
+       
+        System.out.print("Hasta que numero desea que vaya la tabla de multiplicar?: ");
+        int limite = scanner.nextInt();
+
+        
+        System.out.println("Tabla de multiplicar del " + multiplicador + ":");
+        for (int i = 1; i <= limite; i++) {
+            System.out.println(multiplicador + " x " + i + " = " + (multiplicador * i));
+        }
+        
+        scanner.close();
+    }
+}
